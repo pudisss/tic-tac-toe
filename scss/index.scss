@@ -1,0 +1,98 @@
+/* Initialize variable */
+
+/* Code begins here */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Work Sans";
+}
+
+section.main-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    .header1 {
+        position: relative;
+        top: 2.5rem;
+    }
+
+    .game {
+        display: grid;
+        grid-template-rows: 220px 220px 220px;
+        grid-template-columns: 219px 219px 219px;
+        grid-template-areas: 
+        "b1 b2 b3"
+        "b4 b5 b6"
+        "b7 b8 b9";
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        position: relative;
+        top: 3.5rem;
+
+        div {
+            background-color:  #C9F9FC;
+            border: 8px solid black;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .block1 {
+            grid-area: b1;
+
+        }
+        .block2 {
+            grid-area: b2;
+
+        }
+        .block3 {
+            grid-area: b3;
+
+        }
+        .block4 {
+            grid-area: b4;
+
+        }
+        .block5 {
+            grid-area: b5;
+
+        }
+        .block6 {
+            grid-area: b6;
+
+        }
+        .block7 {
+            grid-area: b7;
+
+        }
+        .block8 {
+            grid-area: b8;
+
+        }
+        .block9 {
+            grid-area: b9;
+        }
+    
+
+    }
+    button.restart {
+        position: relative;
+        top: 3.5rem;
+        width: 100px;
+        height: 50px;
+        border: 1px solid black;
+        background-color: transparent;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        color: black;
+        transition: 0.3s;
+    }
+    .restart:hover {
+        background-color: black;
+        color: white;
+    }
+}
